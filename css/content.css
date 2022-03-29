@@ -1,0 +1,13 @@
+
+ .right{
+	height: 100vh;
+	width: 100vh;
+	position:absolute;
+	left: 200px;
+	top: 4.5rem;
+	height: calc(100vh - 4.5rem);
+	width: calc(100vw - 200px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

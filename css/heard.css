@@ -1,0 +1,78 @@
+@keyframes jumping {
+	0%{
+		transform: translateY(0);
+		text-shadow: 4px 0 6px #ccc;
+	}
+	100%{
+		transform: translateY(-20px);
+		text-shadow: 4px 6px 6px #ccc;
+	}
+}
+ .header{
+    display: flex;
+    height: 4.5rem;
+    width: 100vw;
+    background: linear-gradient(90deg, #333, #111, #aaa);
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+ .header::after{
+    position: absolute;
+    content: "";
+    background-image: url(../image/6.jpg);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .4;
+}
+/*logo*/
+ .header .logo{
+    margin-left: 20px;
+    height: 50px;
+    height: 50px;
+    display: flex;
+}
+ .header .logo img{
+    width:50px;
+
+}
+.header .logo span{
+    margin-left: 10px;
+    line-height: 50px;
+    color: #fff;
+}
+/*文本*/
+ .header .text{
+    font-size: 1.5em;
+    position: relative;
+}
+ .header .text span{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.7rem;
+	font-weight: bold;
+	margin-left: 1rem;
+	text-shadow: 4px 2px 6px #ccc;
+	animation: jumping .7s infinite alternate;
+}
+
+
+ .header .text span:nth-of-type(1){
+   
+    animation-delay: 0s;
+}
+ .header .text span:nth-of-type(2){
+    animation-delay: 0.25s;
+}
+ .header .text span:nth-of-type(3){
+    animation-delay: 0.5s;
+}
+ .header .text span:nth-of-type(4){
+    animation-delay: 0.75s;
+}
+ .header .text span:nth-of-type(5){
+    animation-delay: 1s;
+}

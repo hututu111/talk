@@ -1,0 +1,54 @@
+ .right .magic{
+   position:absolute;
+   right: 50px;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    height: 500px;
+    width: 500px;
+    transition: all 1 linear;
+}
+.right .magic .magic-item{
+    position: absolute;
+            width: 300px;
+            height: 300px;
+            left: calc(50% );
+            top: calc(50% );
+            transform: translate(-50%,-50%);
+            transform-style: preserve-3d;
+            animation: turn 10s infinite linear;
+}
+@keyframes turn {
+    0%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateY(360deg)
+    }
+}
+
+.right .magic img{
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    opacity: .5;
+    
+}
+ .right .magic img:nth-of-type(1){
+    transform: translateZ(150px) ; 
+}
+
+ .right .magic img:nth-of-type(2){
+    transform:   translateZ(-150px)  rotateY(180deg); 
+}
+ .right .magic img:nth-of-type(3){
+    transform: rotateY(90deg)  translateZ(150px)  ; 
+}
+.right .magic img:nth-of-type(4){
+    transform: rotateX(90deg)  translateZ(150px); 
+}
+ .right .magic img:nth-of-type(5){
+    transform: rotateX(90deg)  translateZ(-150px)  ; 
+}
+ .right .magic img:nth-of-type(6){
+    transform: rotateY(90deg)  translateZ(-150px)  rotateY(180deg) ; 
+}
